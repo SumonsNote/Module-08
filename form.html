@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script src="https://kit.fontawesome.com/f01a735193.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: verdana;
+        }
+        .login-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-form input,
+        button {
+            padding: 15px;
+            font-size: 18px;
+            margin-top: 5px;
+            border: 1px solid lightgray;
+        }
+
+        .login-form button {
+            background-color: lightseagreen;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            opacity: .7;
+        }
+        .log-title {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="a-link">
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">Service</a>
+                <a href="">Orders</a>
+                <a href="">About us</a>
+            </div>
+            <div class="font-icon">
+                <a href=""><i class="fas fa-user-circle"></i></a>
+                <a href=""><i class="fas fa-sign-out-alt"></i></a>
+            </div>
+        </nav>
+    </header>
+    <div class="login-container">
+        <div class="login-form">
+            <h2 class="log-title">Login Form</h2>
+            <input type="text" name="name" placeholder="Your First Name" id="">
+            <input type="text" name="name" placeholder="Your Last Name" id="">
+            <input type="text" name="text" placeholder="Your Email" id="">
+            <input type="number" name="number" placeholder="Your Number" id="">
+            <input type="password" name="password" placeholder="Password" id="">
+            <button type="submit">Login</button>
+        </div>
+    </div>
+</body>
+
+</html>
